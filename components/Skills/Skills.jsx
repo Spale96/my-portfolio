@@ -2,7 +2,7 @@
 import React from 'react';
 import BallCanvas from '../canvas/Ball';
 import { technologies } from '../../constants';
-import { slideIn, staggerContainer, textContainer, textVariant2 } from '@/utils/motion';
+import { slideIn, staggerContainer, textVariant2 } from '@/utils/motion';
 import { motion } from 'framer-motion';
 import { TypingText } from '../CustomTexts/CustomTexts';
 
@@ -19,15 +19,12 @@ const Skills = () => {
 
                 <TypingText title='MY SKILLS' className='text-2xl' />
 
-                <div className='md:text-xl mt-[2.5rem] lg:mt-[4rem] xl:mt-[5.5rem] mx-auto md:max-w-[600px] text-violet-500'>
+                <div className='md:text-xl mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] mx-auto md:max-w-[600px] text-violet-500'>
                     <motion.h3
                         variants={textVariant2}
-                        viewport={{ once: true }}
                         className='underline underline-offset-8'>Overview.</motion.h3>
                     <motion.p
-                        variants={textContainer}
-                        viewport={{ once: true }}
-
+                        variants={textVariant2}
                         className='mt-5 sm:mt-8 xl:mt-[4rem]'>Hello,my skills are based on <span className='text-rose-500'>Html,Css,JavaScript</span> and Frameworks
                         like <span className='text-rose-500'>React,Next.js and Three.js</span>, also <span className='text-rose-500'>UI/UX</span> designer and making user-interface very enjoyable.
                         I'm a very quick learner and open minded person with great ability to work in team environment.<span className='text-rose-500'>Coding</span> is my meditation.

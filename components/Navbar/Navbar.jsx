@@ -14,7 +14,7 @@ export default function Navbar() {
             const threshold = viewportHeight * 1; // 50% threshold
             const smallScreenThreshold = threshold * 1; // 90% threshold for small screens
 
-            if (scrollY >= threshold || (window.innerWidth <= 768 && scrollY >= smallScreenThreshold)) {
+            if (scrollY >= threshold || (window.innerWidth <= 600 && scrollY >= smallScreenThreshold)) {
                 setIsScrolled(true)
             } else {
                 setIsScrolled(false)
@@ -28,11 +28,24 @@ export default function Navbar() {
         };
     }, []);
 
+
+
+    // const getNavbarClass = () => {
+    //     return `
+    //       items-center text-rose-600 text-lg p-[0.5rem] bg-slate-700 shadow-drop
+    //       ${isScrolled ? 'fixed top-0 left-0 right-0 w-full z-50 bg-[rgba(0, 0, 0, 0.5)] transition ease-in-out duration-300' : ''}
+    //     `;
+    // };
     const getNavbarClass = () => {
-        return `
-          items-center text-rose-600 text-lg p-[0.5rem] bg-slate-700 shadow-drop
-          ${isScrolled ? 'fixed top-0 left-0 right-0 w-full z-50 bg-nav-bg transition ease-in-out  duration-300' : ''}
-        `;
+        let classes = 'items-center text-rose-600 text-lg p-[0.5rem] shadow-drop';
+
+        if (isScrolled) {
+            classes += ' fixed top-0 left-0 right-0 w-full z-50 bg-[rgba(0, 0, 0, 0.5)] transition ease-in-out duration-300';
+        } else {
+            classes += ' bg-slate-700';
+        }
+
+        return classes;
     };
 
     return (

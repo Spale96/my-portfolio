@@ -13,7 +13,6 @@ module.exports = {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',
         'tertiary': "#151030",
-        'nav-bg': 'rgba(0,0,0,0.7)',
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

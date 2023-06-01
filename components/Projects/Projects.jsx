@@ -12,7 +12,6 @@ import { SiNetlify } from 'react-icons/si';
 import { TypingText } from '../CustomTexts/CustomTexts';
 
 
-
 const ProjectCard = ({ index, title, icon, about, url, github }) => (
     <Tilt className='w-full'>
         <motion.div
@@ -43,7 +42,6 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                     alt='project'
                     className='w-[12rem] h-[3.5rem] sm:w-[14rem] sm:h-[6rem]  lg:h-[7rem] object-contain'
                 />
-
 
                 <h3 className='text-white text-[15px] lg:text-[20px] font-bold text-center mt-2 lg:mt-[1rem]'>
                     {title}
