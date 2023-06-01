@@ -28,21 +28,13 @@ export default function Navbar() {
         };
     }, []);
 
-
-
-    // const getNavbarClass = () => {
-    //     return `
-    //       items-center text-rose-600 text-lg p-[0.5rem] bg-slate-700 shadow-drop
-    //       ${isScrolled ? 'fixed top-0 left-0 right-0 w-full z-50 bg-[rgba(0, 0, 0, 0.5)] transition ease-in-out duration-300' : ''}
-    //     `;
-    // };
     const getNavbarClass = () => {
         let classes = 'items-center text-rose-600 text-lg p-[0.5rem] shadow-drop';
 
         if (isScrolled) {
-            classes += ' fixed top-0 left-0 right-0 w-full z-50 bg-[rgba(0, 0, 0, 0.5)] transition ease-in-out duration-300';
+            classes += 'fixed top-0 left-0 right-0 w-full z-50 bg-[rgba(0, 0, 0, 0.5)] transition ease-in-out duration-300';
         } else {
-            classes += ' bg-slate-700';
+            classes += 'bg-slate-700';
         }
 
         return classes;
