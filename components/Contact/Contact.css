@@ -1,0 +1,16 @@
+.line-wrapper::after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 50%;
+    background-color: var(--gray-1);
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bg-contact {
+    background: rgb(8, 15, 43);
+    background: linear-gradient(90deg, rgba(8, 15, 43, 1) 2%, rgba(52, 7, 75, 1) 87%);
+}
