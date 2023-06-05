@@ -10,7 +10,7 @@ const Statue = () => {
     const statue = useGLTF("./statue/scene.gltf");
 
     return (
-        <primitive object={statue.scene} scale={1} position-y={0} rotation-y={0} />
+        <primitive object={statue.scene} scale={9} position-y={0} rotation-y={0} />
     );
 };
 

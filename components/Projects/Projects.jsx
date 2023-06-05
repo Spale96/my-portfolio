@@ -65,7 +65,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
 
 export default function Projects() {
     return (
-        <section id='projects' className='bg-primary-black  pt-9 pb-7 relative'>
+        <section id='projects' className='bg-primary-black py-[6rem] relative'>
             <div className='gradient-05 z-0' />
             <div className='gradient-06 z-0' />
             <motion.div

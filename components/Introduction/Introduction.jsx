@@ -1,19 +1,50 @@
 'use client';
 
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import videoUrl from '@/public/video.mp4';
 import { motion } from 'framer-motion';
 
 
 export default function Introduction() {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    video.play();
+                    console.log('Video is playing');
+                } else {
+                    video.pause();
+                    console.log('Video is paused');
+                };
+            });
+        });
+        observer.observe(video);
+
+        return () => {
+            observer.unobserve(video);
+        };
+    }, []);
+
+
     return (
         <header id='home'>
             <div className='w-full h-screen'>
                 <div className='absolute bg-[rgba(0,0,0,.3);] top-0 left-0 w-full h-full'></div>
 
-                <video src={videoUrl} type='video/mp4' className='w-full h-[100%] object-cover' autoPlay loop muted></video>
+                <video
+                    ref={videoRef}
+                    src={videoUrl}
+                    type='video/mp4'
+                    className='w-full h-[100%] object-cover'
+                    autoPlay loop muted>
 
-                <div className='absolute w-full h-[100%] flex flex-col  text-center items-center justify-center top-0 left-0 '>
+                </video>
+
+                <div className='absolute w-full h-[100%] flex flex-col text-center items-center justify-center top-0 left-0 '>
 
                     <h1 className='text-white sm:text-3xl text-2xl'>Hi,I'm <span className='sm:text-3xl text-2xl text-rose-600'>Mihajlo Spasić.
                         <br />

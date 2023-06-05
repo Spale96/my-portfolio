@@ -11,7 +11,7 @@ import { slide, staggerContainer } from '@/utils/motion';
 
 export default function About() {
     return (
-        <section className=' bg-primary-black pt-16 pb-40 lg:py-16  xl:pt-[15rem] xl:pb-[11rem] lg:px-8 relative z-40' id='about'>
+        <section className=' bg-primary-black pt-16 pb-40 lg:pt-[15rem] lg:pb-[11rem] lg:px-8 relative z-40' id='about'>
             <div className='gradient-04 z-0' />
             <div className='gradient-03 z-0' />
             <motion.div

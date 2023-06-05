@@ -9,20 +9,20 @@ import { TypingText } from '../CustomTexts/CustomTexts';
 
 const Skills = () => {
     return (
-        <section id='skills' className=' bg-primary-black relative'>
+        <section id='skills' className=' bg-primary-black relative px-8 py-16'>
             <motion.div
                 variants={staggerContainer}
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: true }}
-                className=' text-white text-center px-8 py-16'>
+                className=' text-white text-center'>
 
                 <TypingText title='MY SKILLS' className='text-2xl' />
 
-                <div className='md:text-xl mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] mx-auto md:max-w-[600px] text-violet-500'>
+                <div className='md:text-xl mt-[2.5rem] lg:mt-[4rem] xl:mt-[4.5rem] text-left sm:text-center mx-auto max-w-[500px] md:max-w-[600px] text-violet-500'>
                     <motion.h3
                         variants={textVariant2}
-                        className='underline underline-offset-8'>Overview.</motion.h3>
+                        className='underline underline-offset-8 decoration-rose-500'>Overview.</motion.h3>
                     <motion.p
                         variants={textVariant2}
                         className='mt-5 sm:mt-8 xl:mt-[4rem]'>Hello,my skills are based on <span className='text-rose-500'>Html,Css,JavaScript</span> and Frameworks
@@ -31,7 +31,7 @@ const Skills = () => {
                     </motion.p>
                 </div>
                 <motion.div
-                    className='flex flex-row flex-wrap justify-center lg:gap-[2rem] gap-[1.5rem] sm:mt-16 mt-11 xl:mt-20 mx-auto md:w-[400px] lg:w-[545px] w-[300px]'>
+                    className='flex flex-row flex-wrap justify-center lg:gap-[2rem] gap-[1.5rem] mt-16 xl:mt-20 mx-auto md:w-[400px] lg:w-[545px] w-[300px]'>
                     {technologies.map((technology, index) => (
                         <motion.div
                             variants={slideIn('right', 'spring', index * 0.5)}

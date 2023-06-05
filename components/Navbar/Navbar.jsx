@@ -32,9 +32,9 @@ export default function Navbar() {
         let classes = 'items-center text-rose-600 text-lg p-[0.5rem] shadow-drop';
 
         if (isScrolled) {
-            classes += 'fixed top-0 left-0 right-0 w-full z-50 bg-[rgba(0, 0, 0, 0.5)] transition ease-in-out duration-300';
+            classes += ' fixed top-0 left-0 right-0 w-full z-50 bg-black/70 backdrop-blur-md backdrop-opacity-10 transition ease-in-out duration-300';
         } else {
-            classes += 'bg-slate-700';
+            classes += ' bg-slate-700';
         }
 
         return classes;
@@ -42,7 +42,7 @@ export default function Navbar() {
 
     return (
         <nav className={getNavbarClass()}>
-            <ul className='w-full mx-auto  flex justify-center sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem] gap-[1.3rem]'>
+            <ul className='w-full mx-auto flex justify-center gap-[1rem] sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem]'>
                 <li>
                     <a href="#home" className="group text-rose-600 transition duration-300">
                         Home
