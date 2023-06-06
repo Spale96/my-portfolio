@@ -12,9 +12,9 @@ export default function Navbar() {
             const scrollY = window.scrollY;
             const viewportHeight = window.innerHeight;
             const threshold = viewportHeight * 1; // 50% threshold
-            const smallScreenThreshold = threshold * 1; // 90% threshold for small screens
+            const smallScreenThreshold = threshold * 0.8; // 90% threshold for small screens
 
-            if (scrollY >= threshold || (window.innerWidth <= 600 && scrollY >= smallScreenThreshold)) {
+            if (scrollY >= threshold || (window.innerWidth <= 768 && scrollY >= smallScreenThreshold)) {
                 setIsScrolled(true)
             } else {
                 setIsScrolled(false)
@@ -32,7 +32,7 @@ export default function Navbar() {
         let classes = 'items-center text-rose-600 text-lg p-[0.5rem] shadow-drop';
 
         if (isScrolled) {
-            classes += ' fixed top-0 left-0 right-0 w-full z-50 bg-black/70 backdrop-blur-md backdrop-opacity-10 transition ease-in-out duration-300';
+            classes += ' fixed top-0 left-0 right-0 w-full z-50 backdrop-blur-md transition ease-in-out duration-300';
         } else {
             classes += ' bg-slate-700';
         }

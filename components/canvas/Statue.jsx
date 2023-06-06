@@ -10,7 +10,7 @@ const Statue = () => {
     const statue = useGLTF("./statue/scene.gltf");
 
     return (
-        <primitive object={statue.scene} scale={9} position-y={0} rotation-y={0} />
+        <primitive object={statue.scene} scale={11} position-y={0} rotation-y={0} />
     );
 };
 
@@ -20,7 +20,7 @@ const StatueCanvas = () => {
             shadows
             frameloop='demand'
             dpr={[1, 2]}
-            gl={{ preserveDrawingBuffer: true }}
+            gl={{ preserveDrawingBuffer: false }}
             camera={{
                 fov: 45,
                 near: 0.1,

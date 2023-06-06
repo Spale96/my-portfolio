@@ -17,14 +17,15 @@ export default function ContactForm() {
         e.preventDefault();
 
         emailjs.sendForm('service_5ihwwjq', 'template_3p4ocbo', form.current, 'e3Z1qTtwdo5HHmq0B')
-            .then((result) => {
-                console.log(result.text);
+            .then(() => {
+                setName('')
+                setEmail('')
+                setMessage('')
             }, (error) => {
                 console.log(error.text);
             });
         toast.success('Successfully sent Email!')
     };
-
 
     return (
         <>
@@ -74,7 +75,7 @@ export default function ContactForm() {
                 <motion.button
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className=' text-black bg-red-600 text-[1.5rem] inline-block outline-none border-none py-3 px-12 rounded-lg cursor-pointer'
+                    className=' text-black bg-red-600 text-[1.5rem] inline-block outline-none border-none py-2 px-9 md:py-3 md:px-12 rounded-lg cursor-pointer'
                     type="submit" value='Send'>
                     Send
                 </motion.button>
