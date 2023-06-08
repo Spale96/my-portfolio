@@ -1,3 +1,6 @@
+
+import '../styles/globals.css';
+
 export const metadata = {
   title: 'Mihajlo Spasic 👌',
   icons: {
@@ -5,12 +8,13 @@ export const metadata = {
   }
 };
 
-import styles from '../styles/globals.css'
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 };
