@@ -33,7 +33,7 @@ export default function Introduction() {
                 <div className='absolute bg-[rgba(0,0,0,.3);] top-0 left-0 w-full h-full'></div>
 
                 <video
-
+                    preload="metadata"
                     ref={videoRef}
                     src={videoUrl}
                     type='video/mp4'
@@ -42,7 +42,6 @@ export default function Introduction() {
                     autoPlay
                     loop
                     muted>
-
                 </video>
 
                 <div className='absolute w-full h-[100%] flex flex-col text-center items-center justify-center top-0 left-0 '>
