@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React from 'react';
-import myImg from '../../public/imgPortfolio.jpg';
+import myImg from '../../public/imgPortfolio.webp';
 import StatueCanvas from '../canvas/Statue';
 import { motion } from 'framer-motion';
 import './About.css';
@@ -25,7 +25,6 @@ export default function About() {
                 <motion.div
                     variants={slide('left')}
                 >
-
 
                     <Image className='mx-auto rounded-[25%] border-solid border-4 border-violet-500 object-contain md:w-[170px] md:h-[198px] lg:w-[189px] lg:h-[220px] w-[120px] h-[138px] '
                         src={myImg}

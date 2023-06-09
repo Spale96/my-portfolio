@@ -4,7 +4,6 @@ import React, { useRef, useEffect } from 'react';
 import videoUrl from '@/public/video.mp4';
 import { motion } from 'framer-motion';
 
-
 export default function Introduction() {
     const videoRef = useRef(null);
 
@@ -15,10 +14,8 @@ export default function Introduction() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     video.play();
-                    console.log('Video is playing');
                 } else {
                     video.pause();
-                    console.log('Video is paused');
                 };
             });
         });
@@ -36,11 +33,15 @@ export default function Introduction() {
                 <div className='absolute bg-[rgba(0,0,0,.3);] top-0 left-0 w-full h-full'></div>
 
                 <video
+
                     ref={videoRef}
                     src={videoUrl}
                     type='video/mp4'
                     className='w-full h-[100%] object-cover'
-                    autoPlay loop muted>
+                    playsInline
+                    autoPlay
+                    loop
+                    muted>
 
                 </video>
 

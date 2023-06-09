@@ -2,11 +2,12 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import './Projects.css';
 import { projects } from '@/constants';
 import { fadeIn, staggerContainer } from '@/utils/motion';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import './Projects.css';
 import { RxGithubLogo } from 'react-icons/rx';
 import { SiNetlify } from 'react-icons/si';
 import { TypingText } from '../CustomTexts/CustomTexts';
@@ -47,12 +48,12 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                     {title}
                 </h3>
                 <div className='flex justify-center my-2 gap-4'>
-                    <a href={github} target='_blank' rel="noopener noreferrer">
+                    <Link href={github} target='_blank' rel="noopener noreferrer" prefetch={false}>
                         <RxGithubLogo fontSize={17} />
-                    </a>
-                    <a href={url} target='_blank' rel="noopener noreferrer">
+                    </Link>
+                    <Link href={url} target='_blank' rel="noopener noreferrer" prefetch={false}>
                         <SiNetlify fontSize={17} />
-                    </a>
+                    </Link>
                 </div>
 
                 <p className='text-[12px] lg:text-[16px] font-semibold text-center text-white underline mt-[1px] lg:mt-[10px]'>{about}</p>
