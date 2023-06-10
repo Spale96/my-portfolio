@@ -5,7 +5,6 @@ import React from 'react';
 import myImg from '../../public/imgPortfolio.webp';
 import StatueCanvas from '../canvas/Statue';
 import { motion } from 'framer-motion';
-import './About.css';
 import { slide, staggerContainer } from '@/utils/motion';
 
 
@@ -19,7 +18,7 @@ export default function About() {
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: true }}
-                className='flex flex-col mx-auto lg:flex-row  lg:justify-evenly lg:gap-[6rem]  max-w-[1600px]'
+                className='flex flex-col mx-auto lg:flex-row lg:justify-evenly lg:gap-[6rem] max-w-[1600px]'
             >
 
                 <motion.div
@@ -46,8 +45,8 @@ export default function About() {
 
                     <StatueCanvas />
 
-                    <span className='statue-span text-lg text-indigo-100 underline'>Marcus Aurelius</span><br />
-                    <span className='max-w-[300px] inline-block leading-[1.3rem] :w-[350px] text-red-100'>“You have power over your mind — not outside events. Realize this, and you will find strength.”</span>
+                    <span className='text-lg text-indigo-100 underline'>Marcus Aurelius</span><br />
+                    <span className='max-w-[300px] inline-block leading-[1.3rem] w-[350px] text-red-100'>“You have power over your mind — not outside events. Realize this, and you will find strength.”</span>
 
                 </motion.div>
 

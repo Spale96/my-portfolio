@@ -56,7 +56,7 @@ export default function Introduction() {
                         whileTap={{ scale: 0.9 }}
                     >
                         <a
-                            className='py-2 px-6  rounded-md text-slate-300 bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-l hover:from-pink-6n00 hover:to-purple-400 '
+                            className='py-2 px-6 rounded-md text-slate-300 bg-gradient-to-r from-purple-600 to-pink-600 hover:bg-gradient-to-l hover:from-pink-6n00 hover:to-purple-400 '
                             href="/my-resume.pdf" download target='_blank' rel="noopener noreferrer">
                             My Resume
                         </a>

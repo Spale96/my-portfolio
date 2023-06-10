@@ -28,7 +28,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                     scale: 1,
                     speed: 450,
                 }}
-                className='bg-tertiary rounded-[20px] animated-card py-5  px-1 flex justify-evenly items-center flex-col sm:py-7 lg:py-[2rem]'
+                className='bg-tertiary rounded-[20px] animated-card py-5 px-1 flex justify-evenly items-center flex-col sm:py-7 lg:py-[2rem]'
             >
                 <span className="top"></span>
                 <span className="right"></span>
@@ -41,7 +41,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                     quality={100}
                     src={icon.src}
                     alt='project'
-                    className='w-[12rem] h-[3.5rem] sm:w-[14rem] sm:h-[6rem]  lg:h-[7rem] object-contain'
+                    className='w-[12rem] h-[3.5rem] sm:w-[14rem] sm:h-[6rem] lg:h-[7rem] object-contain'
                 />
 
                 <h3 className='text-white text-[15px] lg:text-[20px] font-bold text-center mt-2 lg:mt-[1rem]'>
@@ -78,7 +78,7 @@ export default function Projects() {
                 <TypingText title='MY PROJECTS' className='text-2xl' />
             </motion.div>
 
-            <div className='w-[300px] lg:w-[978px] mt-[3.5rem] lg:mt-[4.5rem] xl:mt-[5.5rem] mx-auto lg:gap-2 xl:gap-5 lg:grid lg:grid-cols-2  overflow-hidden'>
+            <div className='w-[300px] lg:w-[978px] mt-[3.5rem] lg:mt-[4.5rem] xl:mt-[5.5rem] mx-auto lg:gap-2 xl:gap-5 lg:grid lg:grid-cols-2 overflow-hidden'>
                 {projects.map((project, index) => (
                     <ProjectCard key={project.title} index={index} {...project} />
                 ))}
