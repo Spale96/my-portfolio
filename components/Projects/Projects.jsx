@@ -38,7 +38,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                 <Image
                     width={150}
                     height={150}
-                    quality={100}
+                    quality={60}
                     src={icon.src}
                     alt='project'
                     className='w-[12rem] h-[3.5rem] sm:w-[14rem] sm:h-[6rem] lg:h-[7rem] object-contain'
@@ -64,6 +64,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
 );
 
 
+
 export default function Projects() {
     return (
         <section id='projects' className='bg-primary-black py-[6rem] relative'>
@@ -86,3 +87,5 @@ export default function Projects() {
         </section>
     );
 };
+
+

@@ -25,9 +25,9 @@ const Skills = () => {
                         className='underline underline-offset-8 decoration-rose-500'>Overview.</motion.h3>
                     <motion.p
                         variants={textVariant2}
-                        className='mt-5 sm:mt-8 xl:mt-[4rem]'>Hello,my skills are based on <span className='text-rose-500'>Html,Css,JavaScript</span> and Frameworks
-                        like <span className='text-rose-500'>React,Next.js and Three.js</span>, also <span className='text-rose-500'>UI/UX</span> designer and making user-interface very enjoyable.
-                        I'm a very quick learner and open minded person with great ability to work in team environment.<span className='text-rose-500'>Coding</span> is my meditation.
+                        className='mt-5 sm:mt-8 xl:mt-[4rem] font-semibold'>Hello, my skills are based on <span className='text-rose-600'>Html, Css, JavaScript</span> and Frameworks
+                        like <span className='text-rose-600'>React, Next.js and Three.js</span>, also <span className='text-rose-600'>UI/UX</span> designer and making user-interface very enjoyable.
+                        I'm a very quick learner and open minded person with great ability to work in team environment.<span className='text-rose-600'>Coding</span> is my meditation.
                     </motion.p>
                 </div>
                 <motion.div

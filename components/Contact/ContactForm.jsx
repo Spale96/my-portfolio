@@ -28,7 +28,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form className='w-full text-md md:text-lg xl:text-xl' ref={form} onSubmit={sendEmail}>
+        <form className='w-full text-md md:text-lg xl:text-xl font-semibold' ref={form} onSubmit={sendEmail}>
             <div className="w-full mb-8">
                 <label className=' text-red-700' htmlFor="name">
                     Your Name
