@@ -21,8 +21,8 @@ export default function HomePage() {
       <div className="overflow-hidden">
         <Introduction />
         <Navbar />
-        <About />
-        <DynamicSkills />
+        {/* <About /> */}
+        {/* <DynamicSkills /> */}
         <DynamicProject />
         <Contact />
         <Footer />
