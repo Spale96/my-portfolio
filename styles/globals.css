@@ -45,8 +45,8 @@
 
 .gradient-05 {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   right: 8%;
   bottom: 11%;
 
@@ -57,7 +57,7 @@
 
 .gradient-06 {
   position: absolute;
-  width: 150px;
+  width: 100px;
   height: 150px;
   left: 5%;
   top: 5%;

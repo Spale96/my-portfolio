@@ -68,8 +68,9 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
 export default function Projects() {
     return (
         <section id='projects' className='bg-primary-black py-[6rem] relative'>
-            <div className='gradient-05 z-0' />
-            <div className='gradient-06 z-0' />
+
+            <div className='hidden md:block gradient-05 md:z-50' />
+
             <motion.div
                 variants={staggerContainer}
                 viewport={{ once: true }}
@@ -77,7 +78,9 @@ export default function Projects() {
                 whileInView='show'
                 className='text-white text-center px-6'>
                 <TypingText title='MY PROJECTS' className='text-2xl' />
+
             </motion.div>
+            <div className='hidden md:block gradient-06 md:z-50' />
 
             <div className='w-[300px] lg:w-[978px] mt-[3.5rem] lg:mt-[4.5rem] xl:mt-[5.5rem] mx-auto lg:gap-2 xl:gap-5 lg:grid lg:grid-cols-2 overflow-hidden'>
                 {projects.map((project, index) => (

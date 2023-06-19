@@ -11,7 +11,7 @@ import { slide, staggerContainer } from '@/utils/motion';
 export default function About() {
     return (
         <section className=' bg-primary-black pt-16 pb-40 lg:pt-[15rem] lg:pb-[11rem] lg:px-8 relative z-40' id='about'>
-            <div className='gradient-04 z-0' />
+            <div className='hidden md:display-block md:gradient-04 md:z-0' />
 
             <motion.div
                 variants={staggerContainer}
@@ -32,7 +32,7 @@ export default function About() {
                         placeholder='blur'
                     />
 
-                    <p className='mt-[2rem] text-center mx-auto max-w-[310px] sm:max-w-[430px] lg:max-w-[500px] text-rose-600  lg:text-lg font-semibold'>
+                    <p className='mt-[2rem] text-left sm:text-center mx-auto max-w-[310px] sm:max-w-[370px] lg:max-w-[500px] text-rose-600  lg:text-lg font-semibold'>
                         I'm a passionate and driven <span className='text-violet-500'>Front-End Developer</span>, with a keen eye for details.
                         I bring creativity,innovation and technical expertise to every project.Whether it's building a responsive
                         website from scratch or optimizing an existing application.
@@ -53,7 +53,7 @@ export default function About() {
                 </motion.div>
 
             </motion.div>
-            <div className='gradient-03 z-0' />
+            <div className='hidden md:display-block md:gradient-03 md:z-0' />
         </section>
     );
 };
