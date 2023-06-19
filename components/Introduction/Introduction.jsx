@@ -47,9 +47,11 @@ export default function Introduction() {
         };
     }, []);
 
+
     const videoContainerStyle = {
-        height: viewportHeight || '100vh', // Fallback to '100vh' if viewport height is not available
+        height: viewportHeight || '100vh'
     };
+
 
     return (
         <header id="home">
