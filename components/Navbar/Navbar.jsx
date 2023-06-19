@@ -12,7 +12,7 @@ export default function Navbar() {
             const scrollY = window.scrollY;
             const viewportHeight = window.innerHeight;
             const threshold = viewportHeight * 1; // 50% threshold
-            const smallScreenThreshold = threshold * 0.70; // 90% threshold for small screens
+            const smallScreenThreshold = threshold * 0.95; // 90% threshold for small screens
 
             setIsScrolled(scrollY >= threshold || (window.innerWidth <= 768 && scrollY >= smallScreenThreshold));
         };
