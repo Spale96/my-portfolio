@@ -9,6 +9,9 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      height: {
+        'small': '100svh',
+      },
       fontFamily: {
         'Inconsolata': ['Inconsolata', 'sans-serif']
       },

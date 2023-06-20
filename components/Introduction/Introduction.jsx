@@ -29,7 +29,7 @@ export default function Introduction() {
 
     return (
         <header id='home'>
-            <div className='w-full h-screen min-h-screen'>
+            <div className='w-full h-small md:h-screen'>
                 <div className='absolute bg-[rgba(0,0,0,.3);] top-0 left-0 w-full h-full'></div>
 
                 <video
