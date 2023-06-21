@@ -12,8 +12,7 @@ export default function Navbar() {
             const scrollY = window.scrollY;
             const viewportHeight = window.innerHeight;
             const threshold = viewportHeight * 1;
-            const smallScreenThreshold = threshold * 0.90;
-
+            const smallScreenThreshold = threshold * 0.95;
             setIsScrolled(scrollY >= threshold || (window.innerWidth <= 768 && scrollY >= smallScreenThreshold));
         };
 
@@ -39,7 +38,7 @@ export default function Navbar() {
 
     return (
         <nav className={getNavbarClass()}>
-            <ul className='w-full mx-auto flex justify-center gap-[1rem] sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem] font-medium'>
+            <ul className='w-full mx-auto flex justify-center gap-[0.8rem] sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem] font-medium'>
                 <li>
                     <a href="#home" className="group text-rose-700 transition duration-300">
                         Home

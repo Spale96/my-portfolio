@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import BallCanvas from '../canvas/Ball';
 import { technologies } from '../../constants';
 import { slideIn, staggerContainer, textVariant2 } from '@/utils/motion';
@@ -16,7 +17,7 @@ const Skills = () => {
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: true }}
-                className=' text-white text-center'>
+                className=' text-white'>
 
                 <TypingText title='MY SKILLS' className='text-2xl' />
 
@@ -31,8 +32,10 @@ const Skills = () => {
                         I'm a very quick learner and open minded person with great ability to work in team environment.<span className='text-rose-600'>Coding</span> is my meditation.
                     </motion.p>
                 </div>
+
+
                 <motion.div
-                    className='flex flex-row flex-wrap justify-center lg:gap-[2rem] gap-[1.5rem] mt-16 xl:mt-20 mx-auto md:w-[400px] lg:w-[545px] w-[300px]'>
+                    className='hidden md:flex flex-row flex-wrap justify-center lg:gap-[2rem] gap-[1.5rem] mt-16 xl:mt-20 mx-auto md:w-[400px] lg:w-[545px] w-[300px]'>
                     {technologies.map((technology, index) => (
                         <motion.div
                             variants={slideIn('right', 'spring', index * 0.5)}
@@ -42,6 +45,25 @@ const Skills = () => {
                         </motion.div>
                     ))}
                 </motion.div>
+
+                <motion.div
+                    className='md:hidden flex flex-row flex-wrap justify-center gap-[1.5rem] lg:gap-[2rem] mt-16 xl:mt-20 mx-auto max-w-[300px] md:w-[400px] lg:w-[545px]'>
+                    {technologies.map((technology, index) => (
+                        <motion.div
+                            variants={slideIn('right', 'spring', index * 0.5)}
+                            className='flex justify-center items-center align-middle sm:w-[3.2rem] sm:h-[3.2rem] md:w-[3.9rem] md:h-[3.9rem] lg:w-[4rem] lg:h-[4rem] xl:w-[6rem] xl:h-[6rem] w-[3rem] h-[3rem]'
+                            key={technology.name}>
+                            <Image
+                                src={technology.icon.src}
+                                width={40}
+                                height={40}
+                                unoptimized={true}
+                                alt='skill-icon'
+                            />
+                        </motion.div>
+                    ))}
+                </motion.div>
+
             </motion.div>
         </section >
     );
