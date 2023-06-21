@@ -22,7 +22,7 @@ export default function HomePage() {
         <Introduction />
         <Navbar />
         <About />
-        {/* <DynamicSkills /> */}
+        <DynamicSkills />
         <DynamicProject />
         <Contact />
         <Footer />
