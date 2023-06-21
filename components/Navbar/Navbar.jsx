@@ -25,7 +25,7 @@ export default function Navbar() {
     }, []);
 
     const getNavbarClass = () => {
-        const classes = ['items-center', 'text-rose-700', 'text-lg', 'p-[0.5rem]', 'shadow-drop', 'font-semibold'];
+        const classes = ['items-center', 'text-rose-700', 'text-lg', 'p-[0.5rem]', 'shadow-drop', 'font-medium'];
 
         if (isScrolled) {
             classes.push('fixed', 'top-0', 'left-0', 'right-0', 'w-full', 'z-50', 'backdrop-blur-md', 'transition', 'ease-in-out', 'duration-300');
