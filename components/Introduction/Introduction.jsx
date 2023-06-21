@@ -44,7 +44,7 @@ export default function Introduction() {
                     muted>
                 </video>
 
-                <div className='absolute w-full h-[100%] flex flex-col text-center items-center justify-center top-0 left-0 '>
+                <div className='absolute w-full h-[100%] flex flex-col text-center items-center justify-center top-0 left-0'>
 
                     <h1 className='text-white sm:text-3xl text-2xl'>Hi,I'm <span className='sm:text-3xl text-2xl text-rose-600'>Mihajlo Spasić.
                         <br />
