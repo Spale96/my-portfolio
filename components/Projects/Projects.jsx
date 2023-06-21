@@ -38,7 +38,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                 <Image
                     width={150}
                     height={150}
-                    quality={60}
+                    quality={65}
                     src={icon.src}
                     alt='project'
                     className='w-[12rem] h-[3.5rem] sm:w-[14rem] sm:h-[6rem] lg:h-[7rem] object-contain'
