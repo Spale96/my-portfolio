@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        'small': ['100svh /* fallback for Opera, IE and etc. */', '100vh'],
+        'small': '100svh',
       },
       fontFamily: {
         'Inconsolata': ['Inconsolata', 'sans-serif']
