@@ -28,6 +28,7 @@ export default function About() {
                     <Image className='mx-auto rounded-[25%] border-solid border-4 border-violet-500 object-contain w-[119px] h-[156px] md:w-[151px] md:h-[198px] lg:w-[167px] lg:h-[220px]'
                         src={myImg}
                         quality={60}
+                        loading='eager'
                         alt='portfolio-image'
                         placeholder='blur'
                     />

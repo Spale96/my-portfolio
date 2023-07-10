@@ -41,6 +41,7 @@ const ProjectCard = ({ index, title, icon, about, url, github }) => (
                     quality={65}
                     src={icon.src}
                     alt='project'
+                    loading='eager'
                     className='w-[12rem] h-[3.5rem] sm:w-[14rem] sm:h-[6rem] lg:h-[7rem] object-contain'
                 />
 

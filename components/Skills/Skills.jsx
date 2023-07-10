@@ -57,7 +57,7 @@ const Skills = () => {
                                 src={technology.icon.src}
                                 width={40}
                                 height={40}
-                                unoptimized={true}
+                                loading='eager'
                                 alt='skill-icon'
                             />
                         </motion.div>
