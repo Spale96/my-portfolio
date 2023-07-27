@@ -94,9 +94,9 @@ const projects = [
     {
         title: "Restaurant",
         icon: restaurant,
-        about: 'React/JS',
-        url: 'https://restaurant-galerija.netlify.app',
-        github: 'https://github.com/Spale96/restaurant'
+        about: 'React/TS',
+        url: 'restaurant-galerija.netlify.app',
+        github: 'https://github.com/Spale96/Restaurant-galerija'
     },
     {
         title: "GPT-4",
