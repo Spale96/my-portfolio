@@ -15,7 +15,6 @@ import {
     netflix,
     metaverse,
     restaurant,
-    gpt4
 } from "../public"
 
 const technologies = [
@@ -95,16 +94,9 @@ const projects = [
         title: "Restaurant",
         icon: restaurant,
         about: 'React/TS',
-        url: 'restaurant-galerija.netlify.app',
+        url: 'https://restaurant-galerija.netlify.app',
         github: 'https://github.com/Spale96/Restaurant-galerija'
     },
-    {
-        title: "GPT-4",
-        icon: gpt4,
-        about: 'React/JS',
-        url: 'https://gpt4-ai-documentation.netlify.app/',
-        github: 'https://github.com/Spale96/GPT4'
-    }
 ];
 
 export { technologies, projects };
