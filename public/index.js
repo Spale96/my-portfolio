@@ -16,7 +16,7 @@ import ecommerce from '../public/assets/projects/Ecommerce.webp';
 import metaverse from '../public/assets/projects/Metaverse.webp';
 import netflix from '../public/assets/projects/Netflix.webp';
 import restaurant from '../public/assets/projects/Restaurant.webp';
-import gpt4 from '../public/assets/projects/GPT-4.webp';
+import weather from '../public/assets/projects/Weather.webp';
 
 
 export {
@@ -36,5 +36,5 @@ export {
     metaverse,
     netflix,
     restaurant,
-    gpt4
+    weather
 };

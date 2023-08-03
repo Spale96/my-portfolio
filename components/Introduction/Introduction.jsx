@@ -24,7 +24,7 @@ export default function Introduction() {
         return () => {
             observer.unobserve(video);
         };
-    }, []);
+    }, [videoRef]);
 
 
     return (

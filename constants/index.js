@@ -15,6 +15,7 @@ import {
     netflix,
     metaverse,
     restaurant,
+    weather
 } from "../public"
 
 const technologies = [
@@ -77,6 +78,13 @@ const projects = [
         github: 'https://github.com/Spale96/e-commerce'
     },
     {
+        title: "WeatherApi",
+        icon: weather,
+        about: 'React.js/API/Typescript',
+        url: 'https://check-your-weather-days.netlify.app/',
+        github: 'https://github.com/Spale96/WeatherApi'
+    },
+    {
         title: "Metaverse",
         icon: metaverse,
         about: 'Next.js/Three.js/JS',
@@ -86,7 +94,7 @@ const projects = [
     {
         title: "Netflix",
         icon: netflix,
-        about: 'React/API/JS',
+        about: 'React.js/API/JS',
         url: 'https://netflix-clone-api.netlify.app',
         github: 'https://github.com/Spale96/netflix-clone'
     },
