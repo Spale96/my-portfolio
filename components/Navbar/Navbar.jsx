@@ -38,7 +38,7 @@ export default function Navbar() {
 
     return (
         <nav className={getNavbarClass()}>
-            <ul className='w-full mx-auto flex justify-center gap-[0.8rem] sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem] font-medium'>
+            <ul className='w-full mx-auto flex justify-center gap-[1.7rem] sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem] font-medium'>
                 <li>
                     <a href="#home" className="group text-rose-700 transition duration-300">
                         Home
