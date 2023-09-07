@@ -24,7 +24,7 @@ export default function Navbar() {
     }, []);
 
     const getNavbarClass = () => {
-        const classes = ['items-center', 'text-rose-700', 'text-base', 'p-[0.5rem]', 'shadow-drop', 'font-medium'];
+        const classes = ['items-center', 'text-rose-700', 'text-lg', 'p-[0.5rem]', 'shadow-drop', 'font-medium'];
 
         if (isScrolled) {
             classes.push('fixed', 'top-0', 'left-0', 'right-0', 'w-full', 'z-50', 'backdrop-blur-md', 'transition', 'ease-in-out', 'duration-300');
@@ -39,6 +39,7 @@ export default function Navbar() {
     return (
         <nav className={getNavbarClass()}>
             <ul className='w-full mx-auto flex justify-center gap-[1.7rem] sm:gap-[3rem] md:gap-[5rem] xl:gap-[6rem] font-medium'>
+
                 <li>
                     <a href="#home" className="group text-rose-700 transition duration-300">
                         Home
